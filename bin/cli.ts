@@ -1,5 +1,6 @@
 #!/usr/bin/env node
-const { execSync } = require('child_process');
+import { execSync } from 'child_process';
+import chalk from 'chalk';
 
 const runCommand = (command) => {
     try {
@@ -16,7 +17,7 @@ const runCommand = (command) => {
 const repoName = process.argv[2];
 const gitCheckoutCommand = `git clone --depth=1 https://github.com/Sarfraz-droid/ts-react-express-starter ${repoName}`;
 
-console.log(`Creating new branch ${repoName}...`);
+console.log(chalk.red(`Creating new branch ${repoName}...`));
 const checkedOut = runCommand(gitCheckoutCommand);
 if (!checkedOut) process.exit(1);
 
