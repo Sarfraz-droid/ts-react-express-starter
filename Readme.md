@@ -1,5 +1,7 @@
 # React-Express-Starter
-
+---
+This maps the react app to your express application
+Run the server and client both in the same port.
 Run the command `npx @sarfalam/ts-vite-react-express repoName`
 ---
 ## Scripts
