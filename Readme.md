@@ -1,4 +1,6 @@
 # React-Express-Starter
+
+Run the command `npx @sarfalam/ts-vite-react-express repoName`
 ---
 ## Scripts
 - `dev` : Runs the client and server in development mode
