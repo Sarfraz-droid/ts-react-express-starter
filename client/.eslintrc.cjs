@@ -1,5 +1,3 @@
 module.exports = {
-    extends: [
-        '../.eslintrc.cjs',
-    ]
-}
+    extends: ['../.eslintrc.cjs']
+};
