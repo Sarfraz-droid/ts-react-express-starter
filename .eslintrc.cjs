@@ -4,14 +4,15 @@ module.exports = {
         es2021: true,
         node: true
     },
-    extends: ['standard-with-typescript', 'plugin:prettier/recommended'],
+    extends: ['standard-with-typescript', 'prettier'],
     overrides: [],
     parserOptions: {
         ecmaVersion: 'latest',
         sourceType: 'module',
         project: ['./tsconfig.json'] // Specify it only for TypeScript files
     },
-    rules: {},
+    rules: {
+    },
     plugins: ['prettier'],
     root: true
 };
