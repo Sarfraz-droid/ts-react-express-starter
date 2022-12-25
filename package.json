@@ -1,6 +1,6 @@
 {
   "name": "@sarfalam/ts-vite-react-express",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "bin": "./bin/cli.js",
   "main": "index.ts",
