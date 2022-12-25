@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { execSync } from "child_process";
+const { execSync } = require('child_process');
 
 const runCommand = (command) => {
     try {
@@ -11,7 +11,7 @@ const runCommand = (command) => {
 }
 
 const repoName = process.argv[2];
-const gitCheckoutCommand = `git checkout -b ${repoName}`;
+const gitCheckoutCommand = `git clone --depth=1 `;
 
 console.log(`Creating new branch ${repoName}...`);
 const checkedOut = runCommand(gitCheckoutCommand);

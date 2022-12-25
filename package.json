@@ -1,8 +1,8 @@
 {
-  "name": "ts-vite-react-express",
-  "version": "1.0.0",
+  "name": "@sarfalam/ts-vite-react-express",
+  "version": "1.0.3",
   "description": "",
-  "bin": "./bin/cli/js",
+  "bin": "./bin/cli.js",
   "main": "index.ts",
   "scripts": {
     "dev": "npx concurrently \"npm run dev-server\" \"npm run dev-client\"",
