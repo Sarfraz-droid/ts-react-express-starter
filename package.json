@@ -1,6 +1,6 @@
 {
   "name": "@sarfalam/ts-vite-react-express",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "",
   "bin": "./bin/cli.js",
   "main": "index.ts",
@@ -10,8 +10,9 @@
     "dev-server": "nodemon src/index.ts",
     "dev-client": "cd client && npm run dev",
     "client-build": "cd client && npm run build",
-    "build": "tsc && npm run client-build",
-    "fresh-install": "npx concurrently \"npm install\" \"cd client && npm install\"",
+    "server-build": "tsc",
+    "build": "npm run server-build && npm run client-build",
+    "fresh-install": "npx concurrently \"rm -rf node_modules && npm install\" \"cd client && rm -rf node_modules&& npm install\"",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint --ext .ts src",
     "lint-fix": "eslint --ext .ts src --fix"

@@ -58,7 +58,7 @@ if (!checkedOut) {
     );
     log(chalk.bold(`\t\t- cd ${repoName}`));
     log(chalk.bold(`\t\t- yarn fresh-install`));
-    log(chalk.bold(`\t\t- 🪐 To start your app, run the following commands:`));
+    log(chalk.italic.greenBright(`🪐\t To start your app, run the following commands:`));
     log(chalk.bold(`\t\t- cd ${repoName}`));
     log(chalk.bold(`\t\t- yarn dev`));
 }
