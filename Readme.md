@@ -1,6 +1,8 @@
 # React-Express-Starter
 ---
 
+*CURRENTLY IN DEVELOPMENT*
+
 This maps the react app to your express application
 Run the server and client both in the same port.
 
