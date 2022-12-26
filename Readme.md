@@ -4,6 +4,8 @@
 This maps the react app to your express application
 Run the server and client both in the same port.
 
+the express server directly serves the build of the react application.
+Further, you can add your own apis in your express application as well
 
 Run the command `npx @sarfalam/ts-vite-react-express repoName`
 
